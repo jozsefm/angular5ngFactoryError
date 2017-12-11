@@ -16,8 +16,14 @@ Minimal reproduction repo to demonstrate issue after upgrading to Angular 5.0.0 
     at file:///D:/angular5ngFactoryError/angular-js/node_modules/angular/angular.js:1662:27 <test-page>"
 
 ## Usage
-    
-Open the index.html from the folder angular-js/app. If you replace the second script tag with app.v4.js you get a working hybrid solution. The app built with v5 is identical to the one built with v4 only minimal differences are there in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts. By using the app.v5.js the quoted error happens.
+
+Run npm install in angular-js folder then open the index.html from /app. If you replace the second script tag with app.v4.js you get a working hybrid solution. The app built with v5 is identical to the one built with v4 only minimal differences are there in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts. By using the app.v5.js the quoted error happens.
+
+## Build
+You can rebuild the Angular files by:
+npm install
+npm run build
+In both folders
 
 ## Rationale
 
