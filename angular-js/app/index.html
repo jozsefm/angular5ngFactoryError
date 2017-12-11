@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="app.v5.js"></script>
+</head>
+<body>
+  <test-page></test-page>
+  <script>
+    angular.module('myApp', []).config(function ($compileProvider) {
+        for(var componentName in app.client.components){
+            $compileProvider.directive(componentName, app.client.components[componentName]);
+        }
+    });
+    app.client.hybridBootstrap()
+  </script>
+</body>
+</html>

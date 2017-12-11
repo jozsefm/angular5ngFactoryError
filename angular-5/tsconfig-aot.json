@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./aot",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators" : true,
+    "skipLibCheck": true,
+    "target": "es5",
+    "module": "es2015",
+    "lib": ["es2017", "dom"],
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
+  },
+  "files": [
+    "src/client/components/main.ts"
+  ],
+  "angularCompilerOptions": {
+    "entryModule": "src/client/components/main#MainModule"
+  }
+}

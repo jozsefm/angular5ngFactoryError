@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./aot",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators" : true,
+    "target": "es2015",
+    "module": "es2015",
+    "lib": ["es2017", "dom"],
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
+  },
+  "files": [
+    "src/client/components/main.module.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit" : true
+  }
+}
