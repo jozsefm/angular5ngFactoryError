@@ -7,7 +7,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators" : true,
     "skipLibCheck": true,
-    "target": "es5",
+    "target": "es2015",
     "module": "es2015",
     "lib": ["es2017", "dom"],
     "moduleResolution": "node",
@@ -16,7 +16,7 @@
     ]
   },
   "files": [
-    "src/client/components/main.ts"
+    "src/client/components/main.module.ts"
   ],
   "angularCompilerOptions": {
     "entryModule": "src/client/components/main#MainModule"
