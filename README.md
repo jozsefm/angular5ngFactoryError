@@ -17,7 +17,7 @@ Minimal reproduction repo to demonstrate issue after upgrading to Angular 5.0.0 
 
 ## Usage
 
-Run npm install in angular-js folder then open the index.html from /app. If you replace the second script tag with app.v4.js you get a working hybrid solution. The app built with v5 is identical to the one built with v4 only minimal differences are there in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts. By using the app.v5.js the quoted error happens.
+Run npm install in angular-js folder then open the index.html from /app. If you replace the second script tag with app.v4.js you get a working hybrid solution. The sources of v5 are identical to the one built with v4 only minimal differences are there in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts. By using the app.v5.js the quoted error happens.
 
 ## Build
 You can rebuild the Angular packages by:  
