@@ -1,6 +1,6 @@
 # angular5ngFactoryError
 
-Minimal reproduction repo to demonstrate issue after upgrading to Angular 5.0.0 (also 5.1.0) from v. 4.4.6 in a hybrid AngularJS (1.4) setup
+Minimal reproduction repo to demonstrate issue after upgrading to Angular 5.0.0 (also 5.1.0) from v. 4.4.6 in a hybrid AngularJS (1.4) setup. For issue: https://github.com/angular/angular/issues/20945
 
 ## Error message:
 "angular.js:12477 Error: No component factory found for TestPage. Did you add it to @NgModule.entryComponents?
