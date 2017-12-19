@@ -1,8 +1,10 @@
 # angular5ngFactoryError
 
-Minimal reproduction repo to demonstrate issue after upgrading to Angular 5.0.0 from v. 4.4.6 in a hybrid AngularJS (1.4) setup
+Minimal reproduction repo to demonstrate issue after upgrading to Angular 5.0.0 (also 5.1.0) from v. 4.4.6 in a hybrid AngularJS (1.4) setup. Ticket: https://github.com/angular/angular/issues/20945
 
 ## Error message:
+
+After opening the index.html from angular-js/app you get the following error:  
 "angular.js:12477 Error: No component factory found for TestPage. Did you add it to @NgModule.entryComponents?
     at noComponentFactoryError (file:///D:/angular5ngFactoryError/angular-js/app/app.v5.js:4181:34)
     at CodegenComponentFactoryResolver.resolveComponentFactory (file:///D:/angular5ngFactoryError/angular-js/app/app.v5.js:4245:19)
@@ -16,8 +18,15 @@ Minimal reproduction repo to demonstrate issue after upgrading to Angular 5.0.0 
     at file:///D:/angular5ngFactoryError/angular-js/node_modules/angular/angular.js:1662:27 <test-page>"
 
 ## Usage
-    
-Open the index.html from the folder angular-js/app. If you replace the second script tag with app.v4.js you get a working hybrid solution. The app built with v5 is identical to the one built with v4 only minimal differences are there in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts. By using the app.v5.js the quoted error happens.
+
+Run npm install in angular-js folder then open the index.html from /app. I inculded pre-built versions of the angular 4 and angular 5 code bases so for testing it's not necessary to build those packages. If you replace the app.v5.js script tag in index.html with app.v4.js you get a working hybrid app. The sources of v5 are identical to the v4 versions, there are only minimal differences in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts.
+
+## Build
+
+You can rebuild the Angular packages by:  
+npm install  
+npm run build  
+In both folders
 
 ## Rationale
 
