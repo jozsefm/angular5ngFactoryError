@@ -3,6 +3,8 @@
 Minimal reproduction repo to demonstrate issue after upgrading to Angular 5.0.0 (also 5.1.0) from v. 4.4.6 in a hybrid AngularJS (1.4) setup. Ticket: https://github.com/angular/angular/issues/20945
 
 ## Error message:
+
+After opening the index.html from angular-js/app you get the following error:
 "angular.js:12477 Error: No component factory found for TestPage. Did you add it to @NgModule.entryComponents?
     at noComponentFactoryError (file:///D:/angular5ngFactoryError/angular-js/app/app.v5.js:4181:34)
     at CodegenComponentFactoryResolver.resolveComponentFactory (file:///D:/angular5ngFactoryError/angular-js/app/app.v5.js:4245:19)
