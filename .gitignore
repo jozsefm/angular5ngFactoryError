@@ -1,4 +1,4 @@
-**/dist
+**/dist/*
 !**/dist/.gitkeep
 **/aot
 **/node_modules
