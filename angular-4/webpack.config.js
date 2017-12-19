@@ -34,6 +34,6 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             {from: './dist', to: '../../angular-js/app'}
-        ],{})
+        ], {ignore:['.gitkeep']})
     ]
 };
