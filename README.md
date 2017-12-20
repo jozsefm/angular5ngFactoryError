@@ -19,7 +19,7 @@ After taking the necessary steps mentioned in the Usage part below, you get the 
 
 ## Usage
 
-Run npm install in angular-js folder then open the index.html from /app. I inculded pre-built versions of the angular 4 and angular 5 code bases so for testing it's not necessary to build those packages. If you replace the app.v5.js script tag in index.html with app.v4.js you get a working hybrid app. The sources of v5 are identical to the v4 versions, there are only minimal differences in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts.
+Run npm install in angular-js folder then open the index.html from /app and that's it! I inculded pre-built versions of the angular 4 and angular 5 code bases so for testing it's not necessary to build those packages. If you replace the app.v5.js script tag in index.html with app.v4.js you can see the app working. The sources of v5 are identical to the v4 versions, there are only minimal differences in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts.
 
 ## Build
 
