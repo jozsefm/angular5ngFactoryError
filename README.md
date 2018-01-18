@@ -19,7 +19,7 @@ After taking the necessary steps mentioned in the Usage part below, you get the 
 
 ## Usage
 
-Run npm install in angular-js folder then open the index.html from /app and that's it! I inculded pre-built versions of the angular 4 and angular 5 code bases so for testing it's not necessary to build those packages. If you replace the app.v5.js script tag in index.html with app.v4.js you can see the app working. The sources of v5 are identical to the v4 versions, there are only minimal differences in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts.
+Run npm install in the angular-js folder then open the index.html from /app and that's it! I inculded pre-built versions of the angular 4 and angular 5 code bases so for testing it's not necessary to build those packages. If you replace the app.v5.js script tag in index.html with app.v4.js you can see the app working. The sources of v5 are identical to the v4 versions, there are only minimal differences in the tooling files (package.json and tsconfig-aot.json) and the skipping of reflect-metadata import in client.ts.
 
 ## Build
 
@@ -30,5 +30,5 @@ In both folders
 
 ## Rationale
 
-I'm in a very specific situation where I can not change the setup of our existing project using Angular 1.4. In order to upgrade our stack I tried to integrate the latest Angular in the only way I saw possible which is by using it through a different package. This repo is a very simplified version of this setup.
+I'm in a very specific situation where I can not change the setup of our existing Angular 1.4 project. In order to upgrade our stack I tried to integrate the latest Angular in the only way I saw possible, by using it through a separate script/package, which exposes donwgraded components to be registered as directives. This repo is a very simplified version of this setup.
 
